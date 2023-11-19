@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FormularioAtividade</title>
+</head>
+<body bgcolor="#ADD8E6">
+
+
+  <fieldset>
+  	
+  	<legend>Ficha do Cliente</legend>
+  		
+  			<form>
+  				<label>Pessoa:</label>
+  				<input type="radio" name="rd-pessoa" value="juridico" id="cjurid">
+  				 <label>Juridico</label>	
+  
+  				<input type="radio" name="rd-pessoa" value="fisico" id="cfisic">
+  				<label>Fisico.</label>
+  				<br>
+  				<br>
+  
+  				<label>CPF/CNPJ</label>
+  					<input type="text" name="val-cpfcnpj">
+  				<br>
+  				<br>
+  
+  				<label>Nome*</label>
+  					<input type="text" name="Nome-cad" size="30">
+  				 &emsp;
+  				<label>Razão Social</label>
+  					<input type="text" name="Razao-cad" size="50">
+  				<br>
+  				<br>
+                  <hr>
+  
+  				<label>Contato:</label>
+  					<input type="text" name="contato-cad" size="20">
+  				 &emsp;
+  				<label>Telefone:</label>	
+  				    <input type="number" name="telefone-cad">
+  				 &emsp;
+  				<label>Celular:</label>    
+  					<input type="number" name="celular-cad">
+  				 &emsp;
+  				<label>Fax:</label>	
+  					<input type="number" name="fax-cad">
+  				 &emsp;	
+  				<label>Pesquisa Especial:</label>	
+  					<input type="text" name="Pesquisa-cad" size="20">
+  				<br>
+  				<br>
+  
+  				<label>Data Nasc:</label>
+  					<input type="date" name="DN-cad">
+  
+  				<label>Sexo:</label>
+  					<input type="radio" name="rd-sexo" value="masculino" id="cmasc">
+  				 <label>Masculino</label>	
+  
+  				 	<input type="radio" name="rd-sexo" value="feminino" id="cfem">
+  				<label>Feminino.</label>
+  			     &emsp;
+  
+  				<label>Inscrição Estadual</label>
+  					<input type="number" name="Inscricao-cad">
+                  &emsp;
+  				<label>Docto RG/CNH/...</label>	
+  					<input type="number" name="rgcnh-cad">
+  
+  				<input type="radio" name="rd-nac" value="Optante Simples Nac" id="coptante">
+  				 <label>Optante Simples Nac</label>		
+  				 <br>
+  				 <br>
+  
+  				<label>Categoria:</label>
+  				<input type="radio" name="rd-categoria" value="Consumidor" id="cConsu">
+  				 <label>Consumidor</label>	
+  
+  				<input type="radio" name="rd-categoria" value="Revenda" id="cReve">
+  				<label>Revenda</label>
+  				<br>
+  				<br>
+  
+  				<fieldset>
+  					<legend>Endereço do cliente</legend>
+  					<form>
+  						<label>CEP:</label>
+  							<input type="number" name="cep-cad">
+  						&emsp;	
+  
+  						<label>Endereço:</label>
+  							<input type="text" name="endereco-cad" size="20">
+  						&emsp;
+  						<label>Numero:</label>	
+  							<input type="number" name="num-cad">
+  						&emsp;
+  						<label>Complemento:</label>	
+  							<input type="text" name="comple-cad">
+  						&emsp;
+  						<label>Bairro:</label>
+  							<input type="text" name="bairro-cad">
+  						<br>
+  						<br>
+  
+  						<label>Estado*:</label>
+  							<select name="slc-estado">
+  						 		<option value="">&nbsp;</option>
+  						 		<option value="SAOPAUO">SP</option>
+  						 		<option value="MINASGERAIS">MG</option>
+  						 		<option value="BELOHORIZONTE">BH</option>
+  						 		<option value="CEARA">CE</option>
+  						 		<option value="ESPIRITOSANTOS">ES</option>
+  				 			</select>
+  						&emsp;
+  						<label>Cidade*:</label>	
+  							<select name="slc-cidade">
+  						 		<option value="">&nbsp;</option>
+  						 		<option value="SAOPAUO">São Paulo</option>
+  						 		<option value="MINASGERAIS">Minas Gerais</option>
+  						 		<option value="BELOHORIZONTE">Belo Horizonte</option>
+  						 		<option value="CEARA">Ceará</option>
+  						 		<option value="ESPIRITOSANTOS">Espirito Santos</option>
+  				 			</select>
+  						&emsp;	
+  						<label>E-mail:</label>
+  							<input type="E-mail" name="Email-cad" size="30">
+  						&emsp;	
+  						<label>E-mail para envio NF-e:</label>
+  							<input type="E-mail NF" name="Email NF-cad" size="30">	
+  						&emsp;
+  						<label>E-mail para envio cobrança:</label>
+  							<input type="E-mail cobranca" name="Email cobranca-cad" size="30">	
+  					</form>
+  				</fieldset>
+  				<br>
+  
+  					<fieldset>
+  						<legend>Endereço de entrega(não preencher se for igual ao endereço principal)</legend>
+  							<form>
+  								<label>CEP</label>
+  									<input type="number" name="cep-cad">
+  								&emsp;
+  								<label>Endereço</label>	
+  									<input type="text" name="endereco-cad" size="20">
+  								&emsp;
+  								<label>Estado*</label>
+  								<select name="slc-estado">
+  							 		<option value="">&nbsp;</option>
+  							 		<option value="SAOPAUO">SP</option>
+  							 		<option value="MINASGERAIS">MG</option>
+  							 		<option value="BELOHORIZONTE">BH</option>
+  							 		<option value="CEARA">CE</option>
+  							 		<option value="ESPIRITOSANTOS">ES</option>
+  					 			</select>
+  					 			&emsp;
+  					 			<label>Cidade*:</label>	
+  								<select name="slc-cidade">
+  							 		<option value="">&nbsp;</option>
+  							 		<option value="SAOPAUO">São Paulo</option>
+  							 		<option value="MINASGERAIS">Minas Gerais</option>
+  							 		<option value="BELOHORIZONTE">Belo Horizonte</option>
+  							 		<option value="CEARA">Ceará</option>
+  							 		<option value="ESPIRITOSANTOS">Espirito Santos</option>
+  				 				</select>
+  				 				&emsp;
+  				 				<label>Bairro:</label>
+  									<input type="text" name="bairro-cad" size="30">
+  								<br>
+  								<br>
+  								<label>Preferencia para entrega:</label>	
+  									<input type="text" name="entrega-cad" size="180">
+  							</form>
+  					</fieldset>
+  					<br>
+  
+  						<fieldset>
+  						<legend>Endereço de entrega(não preencher se for igual ao endereço principal)</legend>
+  							<form>
+  								<label>CEP</label>
+  									<input type="number" name="cep-cad">
+  								&emsp;
+  								<label>Endereço</label>	
+  									<input type="text" name="endereco-cad" size="20">
+  								&emsp;
+  								<label>Estado*</label>
+  								<select name="slc-estado">
+  							 		<option value="">&nbsp;</option>
+  							 		<option value="SAOPAUO">SP</option>
+  							 		<option value="MINASGERAIS">MG</option>
+  							 		<option value="BELOHORIZONTE">BH</option>
+  							 		<option value="CEARA">CE</option>
+  							 		<option value="ESPIRITOSANTOS">ES</option>
+  					 			</select>
+  					 			&emsp;
+  					 			<label>Cidade*:</label>	
+  								<select name="slc-cidade">
+  							 		<option value="">&nbsp;</option>
+  							 		<option value="SAOPAUO">São Paulo</option>
+  							 		<option value="MINASGERAIS">Minas Gerais</option>
+  							 		<option value="BELOHORIZONTE">Belo Horizonte</option>
+  							 		<option value="CEARA">Ceará</option>
+  							 		<option value="ESPIRITOSANTOS">Espirito Santos</option>
+  				 				</select>
+  				 				&emsp;
+  				 				<label>Bairro:</label>
+  									<input type="text" name="bairro-cad" size="30">
+  							</form>
+  					</fieldset>
+  					<br>
+  
+  					<label>Tipo Cliente:</label>	
+  							<select name="slc-cliente">
+  							 	<option value="">&nbsp;</option>
+  							 	<option value="t.i">T.I</option>
+  							 	<option value="LOGISTICA">LOG</option>
+  								<option value="ADMINISTRACAO">ADM</option>
+  							 	<option value="MARKENTING">MKT</option>
+  				 			</select>
+  				 			&emsp;
+  				 	<label>Transportadora:</label>
+  				 			<select name="slc-cliente">
+  							 	<option value="">&nbsp;</option>
+  							 	<option value="BPSS">Braspress</option>
+  							 	<option value="TNT">TNT Mercúrio</option>
+  								<option value="TLT">Translovato</option>
+  							 	<option value="JMF">Jamef</option>
+  				 			</select>
+  				 			&emsp;
+  				 			<label>ICMS interno proprio p/ emissão NF[%]:</label>
+  				 				<input type="number" name="ICMS">
+  				 			&emsp;
+  				 			<label>Cod.diferenciação IVA:</label>
+  				 				<input type="text" name="IVA" size="3">	
+  				 			<br>
+  				 			<br>
+  				 			
+  				 			<label>Vendedor:</label>	
+  				 			<select name="slc-vendedor">
+  							 	<option value="">&nbsp;</option>
+  							 	<option value="R">102 - Rebecca</option>
+  							 	<option value="E">264 - Eduarda</option>
+  								<option value="L">364 - Lucas</option>
+  							 	<option value="P">413 - Paulo</option>
+  				 			</select>	
+  				 			&emsp;
+  				 			<label>Tabela Padrão de preços</label>
+  				 			<select name="slc-precos">
+  							 	<option value="">&nbsp;</option>
+  							 	<option value="P1">1 - Padrão</option>
+  							 	<option value="P2">2 - Padrão</option>
+  								<option value="P3">3 - Padrão</option>
+  							 	<option value="P4">4 - Padrão</option>
+  				 			</select>
+  				 			<br>
+  				 			<br>
+  				 			<label>Cliente exclusivo da loja:</label>	
+  				 			<select name="slc-exclusivo">
+  							 	<option value="">&nbsp;</option>
+  							 	<option value="P">Premiun</option>
+  							 	<option value="B1">Basic 1</option>
+  								<option value="B2">Basic 2</option>
+  				 			</select>
+  				 			&emsp;
+  				 			<label>Grupo de clientes da loja:</label>	
+  				 			<select name="slc-exclusivo">
+  							 	<option value="">&nbsp;</option>
+  							 	<option value="A">Grupo A</option>
+  							 	<option value="B">Grupo B</option>
+  								<option value="C">Grupo C</option>
+  							 	<option value="D">Grupo D</option>
+  				 			</select>
+  				 			<br>
+  				 			<br>
+  				 			<label>Limite de Credito R$:</label>
+  				 				<input type="number" name="credito">
+  				 			&emsp;	
+  				 			<input type="checkbox" name="bloqueado">
+  				 				<label>Venda Bloqueada</label>	
+  				 			<br>
+  				 			<br>
+  				 			<label>Taxa de comissão[%]:</label>	
+  				 				<input type="number" name="comissao">
+  				 			&emsp;	
+  				 			<input type="checkbox" name="inativo">
+  				 				<label>cliente inativo</label>	
+  				 			<br>
+  				 			<br>
+  				 			<label>Desconto Padrão[%]:</label>	
+  				 				<input type="number" name="desconto">
+  				 			&emsp;
+  				 			<label>Inscrição SUFRAMA:</label>	
+  				 				<input type="text" name="SUFRAMA">
+  				 			<br>
+  				 			<br>
+  				 			<label>Alertar sobre as contas vencidas após:</label>
+  				 				<input type="number" name="contas">	dias
+  				 			<br>
+  				 			<br>
+  
+  				 			<label>Formas de pagamento validas p/ o cliente</label>	
+  				 				<input type="number" name="pagamento" size="100">
+  				 			&emsp;
+  				 			<label>Data do cadastro</label>	
+  				 				<input type="number" name="data">
+  				 			&emsp;
+  				 			<label>Data ultima alteração</label>	
+  				 				<input type="number" name="data">
+  				 			&emsp;
+  				 			<label>Cadastro/alterado por:</label>
+  				 				<select name="slc-cliente">
+  							 	<option value="">&nbsp;</option>
+  							 	<option value="t.i">T.I</option>
+  							 	<option value="LOGISTICA">LOG</option>
+  								<option value="ADMINISTRACAO">ADM</option>
+  							 	<option value="MARKENTING">MKT</option>
+  				 			</select>
+  
+  
+  				 			<br>
+  				 			<br>
+  				 			<label>observações de alerta na venda:</label><br>
+  				 				<textarea name="textcom" rows="10" cols="30">Digite aqui</textarea>
+  				 			<br>
+  				 			<br>
+  				 			<label>observações diversas:</label><br>
+  				 				<textarea name="textcom" rows="10" cols="30">Digite aqui</textarea>
+  				 			<br>	
+  			</form>	
+  </fieldset>
+</body>
+</html>
