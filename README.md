@@ -1,3 +1,3 @@
 # Formulario-ficha-do-cliente
-Um simples formulário de cadastro do cliente,utilizando somente HTML
+Um simples formulário de cadastro do cliente, utilizando somente HTML
 ## Versão ao Vivo
